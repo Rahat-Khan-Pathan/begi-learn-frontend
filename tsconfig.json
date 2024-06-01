@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "composite": true,
+        "target": "ES6",
+        "module": "commonjs",   
+        "types": ["node","vite/client"],
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+    }
+}
