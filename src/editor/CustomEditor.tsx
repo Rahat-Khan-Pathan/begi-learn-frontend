@@ -12,9 +12,7 @@ const CustomEditor = ({ text, setText, error, setError }: IProps) => {
     return (
         <div style={{border: error ? "1px solid red" : ""}}>
             <CKEditor
-                // @ts-ignore
-                
-                editor={ClassicEditor}
+                editor={window['ClassicEditor']}
                 data={text}
                 onChange={(_, editor) => {
                     const data = editor.getData();
