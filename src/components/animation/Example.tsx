@@ -2,7 +2,7 @@ import * as React from "react"
 import { useRef } from "react"
 import { motion, useAnimation } from "framer-motion"
 
-const Example = ({ count, setCount }) => {
+const Example = ({ count, setCount } : {count: number, setCount: React.Dispatch<React.SetStateAction<number>>}) => {
   const constraintsRef = useRef<HTMLDivElement | null>(null);
   const controls = useAnimation();
 

@@ -28,7 +28,6 @@ const Summary = () => {
             .then((res: any) => {
                 setIsLoading(false);
                 setData(res?.data?.data);
-                console.log(res?.data?.data);
             })
             .catch((err: any) => {
                 setErrorMessage(err?.response?.data?.message);

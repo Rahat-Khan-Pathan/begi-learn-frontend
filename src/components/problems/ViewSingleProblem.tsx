@@ -112,14 +112,14 @@ const ViewSingleProblem = () => {
         }
     }, [id]);
     return (
-        <div className="w-full lg:px-8">
+        <div className="w-full px-4 lg:px-8">
             {isLoading ? (
                 <div className="w-full h-[70vh] flex justify-center items-center">
                     <span className="loading loading-dots loading-lg"></span>
                 </div>
             ) : (
                 <div className="pb-16">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Paper
                             className="p-6 overflow-auto"
                             elevation={4}

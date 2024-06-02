@@ -135,7 +135,7 @@ func main() {
                 disabled={readOnly}
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
-                className="select select-bordered select-sm mb-2 w-[15%]"
+                className="select select-bordered select-sm mb-2 w-[25%] lg:w-[15%]"
             >
                 <option>c</option>
                 <option>cpp</option>
@@ -146,7 +146,7 @@ func main() {
             <select
                 value={theme}
                 onChange={(e) => setTheme(e.target.value)}
-                className="select select-bordered select-sm mb-2 ms-2 w-[15%]"
+                className="select select-bordered select-sm mb-2 ms-2 w-[35%] lg:w-[15%]"
             >
                 <option>vs</option>
                 <option>vs-dark</option>

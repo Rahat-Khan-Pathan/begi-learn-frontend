@@ -51,7 +51,6 @@ const ManageSingleProblem = () => {
                             >
                                 <Tab value="one" label="Update Problem Details" />
                                 <Tab value="two" label="Manage Test Cases" />
-                                <Tab value="three" label="Item Three" />
                             </Tabs>
                             {value === "one" ? <EditProblem /> : <ManageTestCases/>}
                         </Box>

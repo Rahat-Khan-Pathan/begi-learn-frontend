@@ -10,11 +10,11 @@ const Auth = () => {
     const [tab, setTab] = useState(location.pathname);
     return (
         <div>
-            <div className="grid grid-cols-2">
-                <div>
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="md:block hidden ">
                     <Index />
                 </div>
-                <div className="mt-20 ms-32 w-[60%]">
+                <div className="md:mt-20 mt-12 mb-12 md:mb-0 m-auto md:ms-32 w-[80%] md:w-[60%]">
                     <div role="tablist" className="tabs tabs-boxed w-full">
                         <a
                             role="tab"
