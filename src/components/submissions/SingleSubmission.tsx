@@ -56,7 +56,8 @@ const SingleSubmission = () => {
             ) : (
                 <div className="pb-16">
                     <div className="grid grid-cols-2 gap-4">
-                        <Paper
+                        {
+                            submission && <Paper
                             className="p-6 overflow-auto"
                             elevation={4}
                             sx={{
@@ -184,7 +185,9 @@ const SingleSubmission = () => {
                                 )}
                             </div>
                         </Paper>
-                        <Paper
+                        }
+                        {
+                            submission && <Paper
                             className="p-4"
                             elevation={4}
                             sx={{ borderRadius: "15px" }}
@@ -201,6 +204,7 @@ const SingleSubmission = () => {
                                 readOnly={true}
                             />
                         </Paper>
+                        }
                     </div>
                 </div>
             )}

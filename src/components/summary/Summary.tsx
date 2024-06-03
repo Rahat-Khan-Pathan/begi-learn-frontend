@@ -45,7 +45,6 @@ const Summary = () => {
                 <div>
                     <div
                         className="text-sm lg:text-normal font-semibold breadcrumbs bg-[#F2F2F2] pt-4 pb-4 w-full"
-                        style={{ position: "fixed", zIndex: 1000 }}
                     >
                         <ul>
                             <li></li>
@@ -60,10 +59,10 @@ const Summary = () => {
                             <span className="loading loading-dots loading-lg"></span>
                         </div>
                     ) : (
-                        <div className="pt-20">
+                        <div className="pt-8">
                             <Paper
-                                className="px-8 pt-8 pb-16 mx-8"
-                                elevation={4}
+                                className="px-8 pt-8 pb-16 sm:mx-8 mx-2"
+                                elevation={6}
                             >
                                 <p
                                     className="bg-teal-600 hover:bg-teal-700 text-white cursor-pointer text-md lg:text-xl font-bold text-center mb-8 py-1"
@@ -72,8 +71,8 @@ const Summary = () => {
                                     Summary
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center items-center">
-                                    <div className="card w-72 bg-neutral text-neutral-content">
-                                        <div className="card-body grid grid-cols-2 items-center gap-4 justify-items-center">
+                                    <div className="card w-[90%] bg-neutral text-neutral-content">
+                                        <div className="card-body grid sm:grid-cols-2 grid-cols-1 items-center gap-4 justify-items-center">
                                             <div>
                                                 <h2 className="card-title">
                                                     Total Problems
@@ -88,8 +87,8 @@ const Summary = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card w-72 bg-emerald-800  text-neutral-content">
-                                        <div className="card-body grid grid-cols-2 items-center gap-4 justify-items-center">
+                                    <div className="card w-[90%] bg-emerald-800  text-neutral-content">
+                                        <div className="card-body grid sm:grid-cols-2 grid-cols-1 items-center gap-4 justify-items-center">
                                             <div>
                                                 <h2 className="card-title">
                                                     Verified Problems
@@ -104,8 +103,8 @@ const Summary = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card w-72 bg-sky-600  text-neutral-content">
-                                        <div className="card-body grid grid-cols-2 items-center gap-4 justify-items-center">
+                                    <div className="card w-[90%] bg-sky-600  text-neutral-content">
+                                        <div className="card-body grid sm:grid-cols-2 grid-cols-1 items-center gap-4 justify-items-center">
                                             <div>
                                                 <h2 className="card-title">
                                                     Total Submissions
@@ -120,8 +119,8 @@ const Summary = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card w-72 bg-neutral text-neutral-content">
-                                        <div className="card-body grid grid-cols-2 items-center gap-4 justify-items-center">
+                                    <div className="card w-[90%] bg-neutral text-neutral-content">
+                                        <div className="card-body grid sm:grid-cols-2 grid-cols-1 items-center gap-4 justify-items-center">
                                             <div>
                                                 <h2 className="card-title">
                                                     Your Problems
@@ -137,8 +136,8 @@ const Summary = () => {
                                         </div>
                                     </div>
 
-                                    <div className="card w-72 bg-sky-600 text-neutral-content">
-                                        <div className="card-body grid grid-cols-2 items-center gap-4 justify-items-center">
+                                    <div className="card w-[90%] bg-sky-600 text-neutral-content">
+                                        <div className="card-body grid sm:grid-cols-2 grid-cols-1 items-center gap-4 justify-items-center">
                                             <div>
                                                 <h2 className="card-title">
                                                     Your Submissions
@@ -153,8 +152,8 @@ const Summary = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card w-72 bg-emerald-800 text-neutral-content">
-                                        <div className="card-body grid grid-cols-2 items-center gap-4 justify-items-center">
+                                    <div className="card w-[90%] bg-emerald-800 text-neutral-content">
+                                        <div className="card-body grid sm:grid-cols-2 grid-cols-1 items-center gap-4 justify-items-center">
                                             <div>
                                                 <h2 className="card-title">
                                                     My Accepted Submissions

@@ -144,7 +144,6 @@ const AddProblem = () => {
                 <div>
                     <div
                         className="text-sm lg:text-normal font-semibold breadcrumbs bg-[#F2F2F2] pt-4 pb-4 w-full"
-                        style={{ position: "fixed", zIndex: 1000, top: 0 }}
                     >
                         <ul>
                             <li></li>
@@ -157,7 +156,7 @@ const AddProblem = () => {
                         </ul>
                     </div>
 
-                    <Paper className="mx-8 px-4 mt-16 py-4" elevation={2} sx={{borderRadius: "15px"}}>
+                    <Paper className="sm:mx-8 mx-2 px-4 mt-8 py-4" elevation={2} sx={{borderRadius: "15px"}}>
                         <p
                             className="bg-teal-600 hover:bg-teal-700 text-white cursor-pointer text-md lg:text-xl font-bold text-center mb-8 py-1"
                             style={{ borderRadius: "10px" }}
@@ -272,7 +271,7 @@ const AddProblem = () => {
                             text={constraints}
                             setText={setConstraints}
                         />
-                        <div className="mt-4 flex items-center flex-row">
+                        <div className="mt-4 flex items-center md:flex-row flex-col">
                             <span className="text-xs lg:text-md font-semibold mb-2 mt-4">
                                 No tag found? Insert a tag here and try again
                             </span>

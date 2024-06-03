@@ -123,7 +123,7 @@ const ViewAllUsers = () => {
                 <div>
                     <div
                         className="text-sm lg:text-normal font-semibold breadcrumbs bg-[#F2F2F2] pt-4 pb-4 w-full"
-                        style={{ position: "fixed", zIndex: 1000 }}
+                        
                     >
                         <ul>
                             <li></li>
@@ -135,7 +135,7 @@ const ViewAllUsers = () => {
                             <li>Manage Problems</li>
                         </ul>
                     </div>
-                    <div className="mb-4 flex items-center pt-20 px-8">
+                    <div className="mb-4 flex items-center pt-8 sm:px-8 px-2">
                     <input
                         type="text"
                         placeholder="Search By Title"
@@ -150,7 +150,7 @@ const ViewAllUsers = () => {
                             <span className="loading loading-dots loading-lg"></span>
                         </div>
                     ) : (
-                        <div className="px-8">
+                        <div className="sm:px-8 px-2">
                             <TableContainer component={Paper}>
                                 <Table
                                     size="medium"
@@ -170,6 +170,12 @@ const ViewAllUsers = () => {
                                                 sx={{ fontWeight: "bold" }}
                                             >
                                                 Email
+                                            </TableCell>
+                                            <TableCell
+                                                align="left"
+                                                sx={{ fontWeight: "bold" }}
+                                            >
+                                                Role
                                             </TableCell>
                                             <TableCell
                                                 align="left"
@@ -209,6 +215,14 @@ const ViewAllUsers = () => {
                                                 </TableCell>
                                                 <TableCell align="left">
                                                     {row?.email}
+                                                </TableCell>
+                                                <TableCell align="left">
+                                                <Chip
+                                                        size="small"
+                                                        label={
+                                                            row?.role
+                                                        }
+                                                    />
                                                 </TableCell>
                                                 <TableCell align="left">
                                                 <Chip
@@ -262,7 +276,7 @@ const ViewAllUsers = () => {
                                                             size="small"
                                                             aria-label="delete"
                                                         >
-                                                            {row?.isVerified ? (
+                                                            {row?.isActive ? (
                                                                 <ClearIcon color="error" />
                                                             ) : (
                                                                 <DoneIcon color="success" />

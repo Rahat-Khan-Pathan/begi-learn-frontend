@@ -101,7 +101,7 @@ const Login = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setEmail(e.target.value)}
                     type="text"
-                    className="grow"
+                    className="grow w-full"
                     placeholder="Email"
                 />
             </label>
@@ -121,7 +121,7 @@ const Login = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setPassword(e.target.value)}
                     type={showPassword ? "text" : "password"}
-                    className="grow"
+                    className="grow w-full"
                     placeholder="Password"
                 />
                 <IconButton onClick={() => setShowPassword(!showPassword)}>
@@ -187,7 +187,7 @@ const Login = ({ setTab }: IProps) => {
                         <input
                             onChange={(e) => setEmail2(e.target.value)}
                             type="text"
-                            className="grow"
+                            className="grow w-full"
                             placeholder="Enter your email"
                         />
                     </label>

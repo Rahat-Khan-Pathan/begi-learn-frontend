@@ -74,7 +74,7 @@ const Signup = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setUsername(e.target.value)}
                     type="text"
-                    className="grow"
+                    className="grow w-full"
                     placeholder="Username (without spaces)"
                 />
             </label>
@@ -90,7 +90,7 @@ const Signup = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setFullName(e.target.value)}
                     type="text"
-                    className="grow"
+                    className="grow w-full"
                     placeholder="Full name"
                 />
             </label>
@@ -107,7 +107,7 @@ const Signup = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setEmail(e.target.value)}
                     type="text"
-                    className="grow"
+                    className="grow w-full"
                     placeholder="Email"
                 />
             </label>
@@ -127,7 +127,7 @@ const Signup = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setPassword(e.target.value)}
                     type={showPassword ? "text" : "password"}
-                    className="grow"
+                    className="grow w-full"
                     placeholder="Password (minimum 6 digits)"
                 />
                 <IconButton onClick={() => setShowPassword(!showPassword)}>
@@ -155,7 +155,7 @@ const Signup = ({ setTab }: IProps) => {
                 <input
                     onChange={(e) => setRepeatPassword(e.target.value)}
                     type={showRepeatPassword ? "text" : "password"}
-                    className="grow"
+                    className="grow w-full w-full"
                     placeholder="Repeat Password"
                 />
                 <IconButton

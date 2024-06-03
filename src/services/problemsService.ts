@@ -29,6 +29,13 @@ class ProblemsService {
             }
         });
     };
+    getProblemByIdForUpdate = (id:string, token: string)  => {
+        return axios.get(`${API_URL}/for-update/${id}`, {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
+    };
     updateProblemById = (id:string, payload: any, token: string) => {
         return axios.put(`${API_URL}/${id}`, {...payload}, {
             headers: {

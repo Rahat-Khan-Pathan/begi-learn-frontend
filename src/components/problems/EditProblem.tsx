@@ -138,7 +138,7 @@ const EditProblem = () => {
     const getProblemData = ()=> {
         setIsLoading(true);
         problemsService
-            .getProblemById(id, token)
+            .getProblemByIdForUpdate(id, token)
             .then((res: any) => {
                 const data = res?.data?.data;
                 setTitle(data?.title);

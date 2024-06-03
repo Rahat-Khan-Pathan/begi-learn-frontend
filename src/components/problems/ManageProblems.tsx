@@ -152,11 +152,9 @@ const ManageProblems = () => {
     return (
         <>
             <div className="w-[90vw]">
-                
                 <div>
                     <div
                         className="text-sm lg:text-normal font-semibold breadcrumbs bg-[#F2F2F2] pt-4 pb-4 w-full"
-                        style={{ position: "fixed", zIndex: 1000 }}
                     >
                         <ul>
                             <li></li>
@@ -168,7 +166,7 @@ const ManageProblems = () => {
                             <li>Manage Problems</li>
                         </ul>
                     </div>
-                    <div className="mb-4 flex items-center pt-20 px-8">
+                    <div className="mb-4 flex items-center pt-8 sm:px-8 px-2">
                     <input
                         type="text"
                         placeholder="Search By Title"
@@ -177,7 +175,7 @@ const ManageProblems = () => {
                         onChange={(e) => handleSearch(e)}
                     />
                     <Autocomplete
-                        sx={{ width: 250, marginLeft: "10px" }}
+                        sx={{ width: 200, marginLeft: "10px" }}
                         size="small"
                         limitTags={5}
                         id="multiple-limit-tags"
@@ -201,7 +199,7 @@ const ManageProblems = () => {
                             <span className="loading loading-dots loading-lg"></span>
                         </div>
                     ) : (
-                        <div className="px-8">
+                        <div className="sm:px-8 px-2">
                             <TableContainer component={Paper}>
                                 <Table
                                     size="medium"
